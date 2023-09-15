@@ -1,6 +1,6 @@
 {
   "name": "use-draggable-vuetify-dialog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "make vuetify dialogs draggable",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,10 @@
     "vue",
     "movable"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AissamYekhlef/use-draggable-veutify-dialog.git"
+  },
   "author": "Aissam Yekhlef",
   "license": "ISC"
 }
