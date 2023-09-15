@@ -1,6 +1,6 @@
 {
   "name": "use-draggable-vuetify-dialog",
-  "version": "1.0.1",
+  "version": "1.2.0",
   "description": "make vuetify dialogs draggable",
   "main": "index.js",
   "scripts": {
