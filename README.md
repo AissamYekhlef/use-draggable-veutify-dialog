@@ -37,5 +37,48 @@ deactivateDraggableDialog() {
 	deactivateDraggableDialogs(draggableDialogId);
 	return  true
 }
-``` 
+```
 the last opened dialog only can close the draggable functionality
+
+## Mixin
+you can use directly the mixing in your dialog component (must be used vuetify v-dialog)
+
+
+```js
+import { draggableDialogMixin } from "use-draggable-vuetify-dialog"
+
+export default  {
+	...
+	mixins: [
+		...,
+		draggableDialogMixin
+	],
+	...
+    
+}
+```
+
+Description:
+you have props: draggable to pass from the parent component 
+
+```js
+props: {
+	draggable: {
+		type: Boolean,
+		default: true
+	}
+},
+```
+you have access to methods: 
+
+add other hooks to update draggable status 
+example:
+
+	mounted() {
+		this.activateDraggableDialogs()
+	},
+	destroyed() {
+		this.deactivateDraggableDialogs()
+	}
+
+
